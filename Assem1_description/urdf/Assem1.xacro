@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<robot name="Assem1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Assem1_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Assem1_description)/urdf/Assem1.trans" />
+<xacro:include filename="$(find Assem1_description)/urdf/Assem1.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.3631357631440988 -1.2853631397968324 1.549225903386944" rpy="0 0 0"/>
+    <mass value="8.273377133383082"/>
+    <inertia ixx="0.10107" iyy="0.142408" izz="0.155861" ixy="-0.0" iyz="-0.0" ixz="-0.012189"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LINK1_1">
+  <inertial>
+    <origin xyz="2.1948999739951347e-07 -1.5224926852575038e-07 0.2027969647681127" rpy="0 0 0"/>
+    <mass value="6.642241324989527"/>
+    <inertia ixx="0.121389" iyy="0.129273" izz="0.050189" ixy="-0.004864" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.401053 1.285363 -1.589552" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.401053 1.285363 -1.589552" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LINK2_1">
+  <inertial>
+    <origin xyz="1.857970652418317 0.3984930142119294 1.369672347223048" rpy="0 0 0"/>
+    <mass value="8.932817868239988"/>
+    <inertia ixx="0.349101" iyy="0.352823" izz="0.15396" ixy="-0.002296" iyz="0.053625" ixz="0.112493"/>
+  </inertial>
+  <visual>
+    <origin xyz="2.332068 1.718676 -0.725431" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="2.332068 1.718676 -0.725431" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LINK3_1">
+  <inertial>
+    <origin xyz="-0.05381438529888516 0.07404972349917349 0.12209650157084573" rpy="0 0 0"/>
+    <mass value="3.7931012329372007"/>
+    <inertia ixx="0.031883" iyy="0.040888" izz="0.028531" ixy="-0.005555" iyz="0.002772" ixz="0.005815"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.560526 1.461086 -2.378762" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.560526 1.461086 -2.378762" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LINK4_1">
+  <inertial>
+    <origin xyz="-0.1445061038369594 -0.06888601817030504 0.0432708383861824" rpy="0 0 0"/>
+    <mass value="1.4892951413019413"/>
+    <inertia ixx="0.00702" iyy="0.012203" izz="0.012664" ixy="-0.003208" iyz="0.000878" ixz="0.0019"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.732408 1.443318 -2.568841" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.732408 1.443318 -2.568841" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LINK5_1">
+  <inertial>
+    <origin xyz="-0.01861061052294455 -0.0070307934372491054 -0.046593384368052604" rpy="0 0 0"/>
+    <mass value="0.7527792924601906"/>
+    <inertia ixx="0.001567" iyy="0.003903" izz="0.004129" ixy="0.000279" iyz="-5e-06" ixz="0.000547"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.957033 1.547545 -2.687502" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.957033 1.547545 -2.687502" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assem1_description/meshes/LINK5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="旋转1" type="continuous">
+  <origin xyz="-0.401053 -1.285363 1.589552" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="LINK1_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="旋转2" type="continuous">
+  <origin xyz="-1.931015 -0.433313 -0.864121" rpy="0 0 0"/>
+  <parent link="LINK1_1"/>
+  <child link="LINK2_1"/>
+  <axis xyz="-0.430305 0.902684 -0.0"/>
+</joint>
+
+<joint name="旋转3" type="continuous">
+  <origin xyz="1.771542 0.25759 1.653331" rpy="0 0 0"/>
+  <parent link="LINK2_1"/>
+  <child link="LINK3_1"/>
+  <axis xyz="-0.430305 0.902684 -0.0"/>
+</joint>
+
+<joint name="旋转4" type="continuous">
+  <origin xyz="-0.171882 0.017768 0.190079" rpy="0 0 0"/>
+  <parent link="LINK3_1"/>
+  <child link="LINK4_1"/>
+  <axis xyz="-0.871407 -0.415396 0.260952"/>
+</joint>
+
+<joint name="旋转5" type="continuous">
+  <origin xyz="-0.224625 -0.104227 0.118661" rpy="0 0 0"/>
+  <parent link="LINK4_1"/>
+  <child link="LINK5_1"/>
+  <axis xyz="-0.2131 -0.158595 -0.964073"/>
+</joint>
+
+</robot>
